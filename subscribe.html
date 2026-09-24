@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Подписаться — САМИЗДАТ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="status">SYSTEM ONLINE</div>
+    <div>ПОДПИСКА</div>
+  </div>
+
+  <header class="masthead">
+    <h1><span class="bracket">[</span>САМ<em>ИЗДАТ</em><span class="bracket">]</span></h1>
+    <div class="meta"><b>ПОДПИСКА</b>РАЗ В НЕДЕЛЮ</div>
+  </header>
+
+  <nav class="nav">
+    <a href="index.html">Главная</a>
+    <span class="sep">·</span>
+    <a href="about.html">О проекте</a>
+    <span class="sep">·</span>
+    <a href="archive.html">Архив</a>
+    <span class="sep">·</span>
+    <a href="subscribe.html" class="active">Подписаться</a>
+  </nav>
+
+  <section class="form-block">
+    <h1>Подписаться</h1>
+    <p class="lead">Раз в неделю — новый выпуск. Без спама, без рекламы, без «полезных рассылок». Только «Самиздат».</p>
+
+    <!-- ФОРМА. Пока работает только визуально. Позже подключим реальную (Mailchimp / SendPulse / Telegram) -->
+    <form onsubmit="event.preventDefault(); alert('Форма пока в разработке. Скоро подключим реальную отправку.');">
+      <input type="email" placeholder="твой@email.ru" required>
+      <button type="submit">ПОДПИСАТЬСЯ</button>
+    </form>
+
+    <p style="margin-top:24px;font-size:14px;color:#5a5a5a;">
+      Или подпишись через
+      <a href="#" style="color:#44ff88;">Telegram</a> ·
+      <a href="#" style="color:#44ff88;">ВКонтакте</a>
+    </p>
+  </section>
+
+  <footer>
+    <div>САМИЗДАТ · ФИЛ · 2026</div>
+    <div class="right">СДЕЛАНО ВРУЧНУЮ</div>
+  </footer>
+
+</div>
+</body>
+</html>
